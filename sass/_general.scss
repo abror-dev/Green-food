@@ -1,0 +1,43 @@
+/* GENERAL */
+html {
+  box-sizing: border-box;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: $font-serif;
+  color: $cl-primary;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.btn {
+  border-radius: 6px;
+  color: #fff;
+  background: $cl-secondary;
+  @include tr-bg_cl;
+  
+  &:hover {
+    background: $cl-primary;
+  }
+}

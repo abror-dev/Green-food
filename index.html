@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+   <!-- Font Awesome -->
+   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+   <!-- CSS Files -->
+   <link rel="stylesheet" href="./css/flex-box.css">
+   <link rel="stylesheet" href="./css/global.css">
+   <link rel="stylesheet" href="./sass/main.css">
+   <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+   <title> Green Shop </title>
+</head>
+<body>
+
+   <header id="header" class="header">
+      <div class="container">
+         
+         <div class="header__inner row between align-center">
+            <a href="#">
+               <img src="./img/logo.svg" alt="logo" width="150" height="35">
+            </a>
+            <nav class="header__nav nav">
+               <ul class="nav__list row"></ul>
+            </nav>
+            <ul class="header__logins logins row align-center">
+               <li>
+                  <a class="logins__search" href="#"><i class="far fa-search"></i></a>
+               </li>
+               <li>
+                  <a class="logins__search" href="#"><i class="far fa-shopping-cart"></i></a>
+               </li>
+               <li>
+                  <a class="logins__btn btn" href="#">
+                     <i class="far fa-sign-out"></i>
+                     Login
+                  </a>
+               </li>
+            </div>
+         </div>
+
+      </div>
+   </header>
+
+   <main>
+
+      <section id="main" class="main">
+         <div class="container">
+
+            <div class="main__inner fades">
+               <div>
+                  <div class="main__wrapper row between align-center">
+                     <div class="main__titles">
+                        <span class="main__txt">Welcome to GreenShop</span>
+                        <h2 class="main__title">Let’s Make a Better <span>Planet</span></h2>
+                        <p class="main__desc">We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants to create an unique Urban Jungle. Order your favorite plants!</p>
+                        <a class="main__btn btn" href="#">shop now</a>
+                     </div>
+                     <img class="main__img" src="./img/hero.png" alt="main-img">
+                  </div>
+               </div>
+               <div>
+                  <div class="main__wrapper row between align-center">
+                     <div class="main__titles">
+                        <span class="main__txt">Welcome to GreenShop</span>
+                        <h2 class="main__title">Let’s Improve a Better <span>Galaxy</span></h2>
+                        <p class="main__desc">We are an online plant shop offering a wide range of cheap and trendy plants. Lorem, ipsum dollor an unique Urban Jungle. Order your favorite plants!</p>
+                        <a class="main__btn btn" href="#">shop now</a>
+                     </div>
+                     <img class="main__img" src="./img/hero.png" alt="main-img">
+                  </div>
+               </div>
+               <div>
+                  <div class="main__wrapper row between align-center">
+                     <div class="main__titles">
+                        <span class="main__txt">Welcome to GreenShop</span>
+                        <h2 class="main__title">Let’s Make a Greed <span>Wood</span></h2>
+                        <p class="main__desc">We are an online plant shop offering a wide range Lorem ipsum dolor sit amet. Use our plants to create an unique Urban Jungle. Order your favorite plants!</p>
+                        <a class="main__btn btn" href="#">shop now</a>
+                     </div>
+                     <img class="main__img" src="./img/hero.png" alt="main-img">
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </section>
+
+      <section id="category" class="category">
+         <div class="container">
+
+            <div class="category__inner between">
+               <div class="category__wrapper">
+                  <div class="category__types types">
+                     <div>
+                        <h2 class="types__title">Categories</h2>
+                        <ul class="types__list"></ul>
+                     </div>
+                     <div>
+                        <h3 class="types__title">Price Range</h3>
+                        <div class="types__list">
+                           <div class="types__lines lines">
+                              <span class="lines__line"></span>
+                              <span class="lines__circle circle1"></span>
+                              <span class="lines__circle circle2"></span>
+                           </div>
+                           <span class="types__price">Price: <span>$39 - $1230</span></span>
+                           <button class="types__btn">Filter</button>
+                        </div>
+                     </div>
+                     <div>
+                        <h4 class="types__title">Size</h4>
+                        <ul class="types__list">
+                           <li class="types__item item row between">
+                              <span>Small</span>
+                              <span>(119)</span>
+                           </li>
+                           <li class="types__item item row between">
+                              <span>Medium</span>
+                              <span>(58)</span>
+                           </li>
+                           <li class="types__item item row between">
+                              <span>Large</span>
+                              <span>(32)</span>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="category__sale sale">
+                     <img class="sale__txt-img" src="./img/sale-txt.svg" alt="sale-txt">
+                     <span class="sale__txt">UP TO 75% OFF</span>
+                     <img class="sale__img" src="./img/sale-img.svg" alt="sale-img">
+                  </div>
+               </div>
+               <div class="category__diver">
+                  <div class="category__top top row between">
+                     <ul class="top__list list row">
+                        <li class="list__item active">All Plants</li>
+                        <li class="list__item">New Arrivals</li>
+                        <li class="list__item">Sale</li>
+                     </ul>
+                     <div class="top__sorts">
+                        <select class="top__select" name="top__select">
+                           <option value="1">Default sorting</option>
+                        </select>
+                     </div>
+                  </div>
+                  <div class="category__product product">
+                     <ul class="product__list row between"></ul>
+                     <ul class="product__pagenation pagenation row">
+                        <li class="pagenation__item active">
+                           <a href="#">1</a>
+                        </li>
+                        <li class="pagenation__item">
+                           <a href="#">2</a>
+                        </li>
+                        <li class="pagenation__item">
+                           <a href="#">3</a>
+                        </li>
+                        <li class="pagenation__item">
+                           <a href="#">4</a>
+                        </li>
+                        <li class="pagenation__item">
+                           <a href="#"><i class="far fa-angle-right"></i></a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </section>
+
+      <section id="find" class="find">
+         <div class="container">
+
+            <div class="find__inner row between">
+               <div class="find__wrapper col-6 row align-center">
+                  <div class="bg"></div>
+                  <img src="./img/item5.png" alt="img" width="210" height="210">
+                  <div class="find__titles">
+                     <h2 class="find__title">Summer cactus & succulents</h2>
+                     <p class="find__desc">We are an online plant shop offering a wide range of cheap and trendy plants</p>
+                     <a class="find__btn btn" href="#">
+                        Find More
+                        <i class="far fa-long-arrow-right"></i>
+                     </a>
+                  </div>
+               </div>
+               <div class="find__wrapper col-6 row align-center">
+                  <div class="bg"></div>
+                  <img src="./img/item3.png" alt="img" width="210" height="210">
+                  <div class="find__titles">
+                     <h2 class="find__title">Summer cactus & succulents</h2>
+                     <p class="find__desc">We are an online plant shop offering a wide range of cheap and trendy plants</p>
+                     <a class="find__btn btn" href="#">
+                        Find More
+                        <i class="far fa-long-arrow-right"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </section>
+
+      <section id="blog" class="blog">
+         <div class="container">
+
+            <div class="blog__inner">
+               <div class="blog__titles">
+                  <h2 class="blog__title">Our Blog Posts</h2>
+                  <p class="blog__desc">We are an online plant shop offering a wide range of cheap and trendy plants. </p>
+               </div>
+               <ul class="blog__list row between"></ul>
+            </div>
+
+         </div>
+      </section>
+
+      <section id="news" class="news">
+         <div class="container">
+
+            <div class="news__inner row between align-center">
+               <ul class="news__list row"></ul>
+               <div class="news__join join">
+                  <span class="join__title">Would you like to join newsletters?</span>
+                  <form class="join__form relative-p" action="php-academy.com">
+                     <label class="join__label">
+                        <input class="join__inp" type="mail" name="mail" placeholder="enter your email address...">
+                     </label>
+                     <button class="join__btn">Join</button>
+                  </form>
+                  <p class="join__desc">We usually post offers and challenges in newsletter. We’re your online houseplant destination. We offer a wide range of houseplants and accessories shipped directly from our (green)house to yours! </p>
+               </div>
+            </div>
+
+         </div>
+      </section>
+
+      <section id="subs" class="subs">
+         <div class="container">
+
+            <div class="subs__inner row align-center">
+               <a class="subs__logo" href="#">
+                  <img src="./img/logo.svg" alt="logo" width="150" height="30">
+               </a>
+               <address class="subs__locate">
+                  70 West Buckingham Ave.
+                  Farmingdale, NY 11735
+               </address>
+               <a class="subs__mail" href="mailto:vlad@htmlbook.ru">
+                  contact@greenshop.com
+               </a>
+               <a class="subs__phone" href="tel:+9998">
+                  +88 01911 717 490
+               </a>
+            </div>
+
+         </div>
+      </section>
+
+   </main>
+
+   <footer id="footer" class="footer">
+      <div class="container">
+
+         <div class="footer__inner row between">
+            <ul class="footer__list1">
+               <span class="footer__list-title">My Account</span>
+            </ul>
+            <ul class="footer__list2">
+               <span class="footer__list-title">Help & Guide</span>
+            </ul>
+            <ul class="footer__list3">
+               <span class="footer__list-title">Categories</span>
+            </ul>
+            <div class="footer__social social">
+               <span class="footer__list-title">Social Media</span>
+               <ul class="social__list row">
+                  <li class="social__item">
+                     <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                  <li class="social__item">
+                     <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                  </li>
+                  <li class="social__item">
+                     <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li class="social__item">
+                     <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                  </li>
+                  <li class="social__item">
+                     <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                  </li>
+               </ul>
+               <span class="footer__list-title">My Account</span>
+               <img class="social__img" src="./img/paypals.png" alt="visas">
+            </div>
+         </div>
+         <p class="footer__desc">© 2021 GreenShop. All Rights Reserved.</p>
+
+      </div>
+   </footer>
+
+   <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript">
+      $(".fades").slick({
+        autoplay: true,
+        autoplaySpeed: 4000,
+        speed: 500,
+        fade: true,
+        cssEase: "linear",
+        dots: true,
+      });
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+   <!-- JS File -->
+   <script src="./js/data.js"></script>
+   <script src="./js/main.js"></script>
+   
+</body>
+</html>

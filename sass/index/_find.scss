@@ -1,0 +1,64 @@
+.find {
+  padding: 50px 0;
+
+  &__wrapper {
+    padding: 30px;
+  }
+
+  .col-6 {
+    position: relative;
+    background: $bgcl-gray;
+    overflow: hidden;
+  }
+
+  .bg {
+    position: absolute;
+    bottom: -170px;
+    left: -180px;
+    width: 250px;
+    height: 250px;
+    background-image: url('../../img/dumalo.svg');
+    z-index: 20;
+  }
+
+  &__titles {
+    max-width: 350px;
+    text-align: end;
+  }
+
+  &__title {
+    max-width: 150px;
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 24px;
+    margin-left: auto;
+    margin-bottom: 10px;
+  }
+
+  &__desc {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 25px;
+    color: #727272;
+  }
+
+  &__btn {
+    font-size: 14px;
+    padding: 8px 20px;
+
+    .far {
+      position: relative;
+      left: 5px;
+    }
+  }
+}
+
+@include breakpoint-down (1290px) {
+  .find__inner {
+    justify-content: center;
+  }
+
+  .find__wrapper {
+    margin-bottom: 20px;
+  }
+}

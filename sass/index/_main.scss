@@ -1,0 +1,83 @@
+.main {
+  padding-top: 15px;
+
+  &__inner {
+    background: $bgcl-gray;
+  }
+
+  &__wrapper {
+    padding-right: 40px;
+  }
+
+  .fades .slick-dots {
+    position: relative;
+    top: -15px;
+
+    .slick-active button::before {
+      color: $cl-secondary;
+      opacity: 1;
+    }
+    
+    li {
+      margin: -2px;
+
+      button::before {
+        color: $cl-secondary;
+        opacity: 0.2;
+      }
+    }
+  }
+
+  &__titles {
+    max-width: 700px;
+    padding: 40px;
+  }
+
+  &__txt {
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  &__title {
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 70px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+
+    span {
+      color: $cl-secondary;
+    }
+  }
+
+  &__desc {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 55px;
+    color: #727272;
+  }
+
+  &__btn {
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 10px 25px;
+  }
+
+  &__img {
+    width: 480px;
+    height: 480px;
+
+  }
+}
+
+@include breakpoint-down (1275px) {
+  .main__wrapper {
+    justify-content: center;
+    padding-right: 0;
+  }
+  .main__titles {
+    padding-bottom: 0;
+  }
+}

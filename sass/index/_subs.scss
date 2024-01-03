@@ -1,0 +1,64 @@
+.subs {
+  &__inner {
+    padding: 30px 25px;  
+    gap: 50px;
+    border-top: 1px solid #D0E5D4;
+    border-bottom: 1px solid #D0E5D4;
+    background: #ECF6EE;
+  }
+
+  &__locate {
+    position: relative;
+    max-width: 220px;
+    font-style: normal;
+    padding-left: 30px;
+
+    &::before {
+      position: absolute;
+      top: 20%;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      content: '';
+      background-image: url('../../img/locate-icon.svg');
+    }
+  }
+
+  &__mail {
+    position: relative;
+    padding-left: 30px;
+    color: $cl-primary;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      content: '';
+      background-image: url('../../img/mail-icon.svg');
+    }
+  }
+
+  &__phone {
+    position: relative;
+    padding-left: 30px;
+    color: $cl-primary;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      content: '';
+      background-image: url('../../img/phone-icon.svg');
+    }
+  }
+}
+
+@include breakpoint-down (1010px) {
+  .subs__inner {
+    justify-content: center;
+  }
+}
